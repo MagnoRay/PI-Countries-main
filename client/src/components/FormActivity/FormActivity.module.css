@@ -1,0 +1,119 @@
+.divform{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.formco {
+    /* Centrar el formulario en la página */
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: aliceblue;
+  }
+
+  .ul1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .formco li + li {
+    margin-top: 1em;
+  }
+
+  .warning{
+    border-color: red;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .textcorrect{
+    border-color:  #28b463;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .warningtext{
+      color: red;
+  }
+
+  .buttonback {
+    background : rgba(0, 255, 255, 0.6);
+    border-radius: 0.5em;
+    border: none;
+    color : white; 
+    font-weight: bold;
+    cursor: pointer;
+    height: 35px;
+    width: 70px;
+}
+
+.buttonback:hover {
+    background : rgb(0, 128, 0); 
+    transition: 0.5s;
+    color: white;
+}
+.linkback {
+    color: black;
+    text-decoration: none;
+}
+
+.linkback:hover {
+    color: white;
+    text-decoration: none;
+}
+/*Button Crear*/
+.createbutton {
+  background : rgb(0, 128, 0); 
+  border-radius: 0.5em;
+  border: none;
+  color : white; 
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  height: 35px;
+  width: 100px;
+}
+
+.createbutton:hover {
+  background : #031F37;
+  transition: 0.5s;
+  color: white;
+}
+
+.licountry {
+  margin-top: 15px;
+  list-style: none;
+  width: 100%;
+  font-size: 15px;
+  background: rgba(155, 32, 210, 0.42);
+  list-style: none;
+  border-radius: 6px;    
+}
+
+.deletebuttonco {
+  background : red; 
+  border-radius: 5px;
+  border: none;
+  color : white; 
+  cursor: pointer;
+  margin: 3px;
+}
+
+.deletebuttonco:hover {
+  font-weight: bold;
+}
+
+
+

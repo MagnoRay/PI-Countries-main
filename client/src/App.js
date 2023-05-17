@@ -11,8 +11,8 @@ import FormActivity from './components/FormActivity/FormActivity';
 import Footer from './components/Footer/Footer';
 import axios from 'axios';
 
-axios.defaults.baseURL ="https://pi-countries-main-production-88a4.up.railway.app";
-//axios.defaults.baseURL = "http://localhost:3001";
+//axios.defaults.baseURL ="https://pi-countries-main-production-88a4.up.railway.app";
+axios.defaults.baseURL = "http://localhost:3001";
 
 function App() {
   const location = useLocation();

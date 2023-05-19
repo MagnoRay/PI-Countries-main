@@ -58,15 +58,52 @@
 
 
 @media (max-width: 850px) {
-  
     .divlanding{
+        margin-top: 60px;
+    }
+    .divimg{
+        height: 200px;
+        width: 200px;
+    }
+    .imglanding{
+        height: 100%;
+        width: 100%;
+    }
+    .h1land {
+        font-size: 25px;
     }
     .divdescrp{
-        background-color: aliceblue;
-        width: 96%;
+        width: 85%;
         margin: 4px;
-        border-radius: 10px;
-        box-shadow: 2px aliceblue;
-    
     }
+    .pland{
+        font-size: 18px;
+    }
+    .buttonlan1{
+        font-size: 22px;
+    }
+    }
+
+    @media ((max-width: 850px) and (min-width: 414px)) {
+        .divlanding{
+            margin-top: 5px;
+        }
+        .divimg{
+            height: 170px;
+            width: 170px;
+        }
+        .imglanding{
+            height: 100%;
+            width: 100%;
+        }
+        
+        .h1land {
+            font-size: 23px;
+        }
+        .pland{
+            font-size: 17px;
+        }
+        .buttonlan1{
+            font-size: 20px;
+        }
     }

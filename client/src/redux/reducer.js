@@ -1,4 +1,4 @@
-import { FILTER_ACTIVITY, FILTER_ALPHABETICAL, FILTER_CONTINENT, GET_FILTER_COUNTRY, FILTER_POPULATION, GET_COUNTRIES, GET_DETAIL, GET_FILTER_ACTIVITY, GET_FILTER_CONTINENT, GET_SEARCH_NAME, INSERT_ACTIVITY, FILTER_DURATION, SET_LOADING } from "./action-types";
+import { FILTER_ACTIVITY, FILTER_ALPHABETICAL, FILTER_CONTINENT, GET_FILTER_COUNTRY, FILTER_POPULATION, GET_COUNTRIES, GET_DETAIL, GET_FILTER_ACTIVITY, GET_FILTER_CONTINENT, GET_SEARCH_NAME, INSERT_ACTIVITY, FILTER_DURATION, SET_LOADING, CLEAN_COUNTRIES_DETAIL } from "./action-types";
 const initialState = {
     countries: [],
     rcountries: [],
@@ -216,7 +216,12 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 loading: false
             }
-        
+
+        case CLEAN_COUNTRIES_DETAIL: 
+            return{
+                ...state,
+                detail: {}
+            }
         default: 
         return {
             ...state

@@ -28,6 +28,9 @@
     margin-top: 13px;
     border-radius: 10px 0 0 10px;
     outline: none;
+    padding-right: 0px;
+    border-right-style: solid;
+    border-right-width: 0px;
 }
 
 .inputsearch:hover{

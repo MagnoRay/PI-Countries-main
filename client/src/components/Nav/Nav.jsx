@@ -65,7 +65,7 @@ const Nav = (props, setCurrentPage) => {
                     </li>
                     <li className={styled.navli}>
                         <select onChange={(e)=>handleContinent(e)} value={filter} className={styled.buttonav}>
-                            <option defaultValue="">Ordenar Continente</option>
+                            <option defaultValue="" disabled={filter>=2}>Ordenar Continente</option>
                             <option value="Todos">Todos</option>
                             {
                                 continent.map((c)=>{
@@ -80,7 +80,7 @@ const Nav = (props, setCurrentPage) => {
                     </li>
                     <li className={styled.navli}>
                         <select onChange={(e)=>handleActivity(e)} value={filter} className={styled.buttonav}>
-                            <option defaultValue="">Ordenar Actividad</option>
+                            <option defaultValue="" disabled={filter>=2}>Ordenar Actividad</option>
                             <option value="Todos">Todos</option>
                             {
                                 activity.map((a)=>{
@@ -95,14 +95,14 @@ const Nav = (props, setCurrentPage) => {
                     </li>
                     <li className={styled.navli}>
                         <select onChange={(e)=>handleAlphabetical(e)} value={filter} className={styled.buttonav}>
-                            <option defaultValue="">Orden Alfabético</option>
+                            <option defaultValue="" disabled={filter>=2}>Orden Alfabético</option>
                             <option value="Ascendente">Ascendente A-Z</option>
                             <option value="Descendente">Descendente Z-A</option>
                         </select>
                     </li>
                     <li className={styled.navli}>
                         <select onChange={(e)=>handlePopulation(e)} value={filter} className={styled.buttonav}>
-                            <option defaultValue="">Ordenar Población</option>
+                            <option defaultValue=""  disabled={filter>=2}>Ordenar Población</option>
                             <option value="minimo">Mínimo Asc</option>
                             <option value="maximo">Máximo Desc</option>
                         </select>

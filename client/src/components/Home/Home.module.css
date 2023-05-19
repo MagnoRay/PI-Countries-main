@@ -10,3 +10,28 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.divload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    align-items: center;
+    display: inline-flex;
+}
+
+.spanload {
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: fangsong;
+}
+@media (max-width: 850px) {
+    .divimg{
+        height: 150px;
+        width: 150px;
+    }
+}

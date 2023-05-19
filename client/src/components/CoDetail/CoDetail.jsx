@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
-import { getDetail } from "../../redux/actions";
+import { cleanCountriesDetail, getDetail } from "../../redux/actions";
 import styled from "./CoDetail.module.css"
 
 const CoDetail = () => {
@@ -13,6 +13,7 @@ const CoDetail = () => {
 
     useEffect(()=>{
         dispatch(getDetail(id));
+        return ()=>dispatch(cleanCountriesDetail());
     }, [dispatch, id]);
     
     return(

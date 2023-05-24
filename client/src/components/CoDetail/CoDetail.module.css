@@ -84,16 +84,41 @@
     color : white; 
     font-weight: bold;
     cursor: pointer;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 2px 15px 2px;
     height: 35px;
-    width: 50px;
 }
 
 .despcrition .buttonback button:hover{
     background : rgb(0, 128, 0); 
     transition: 0.5s;
     color: white;
+}
+
+.destable{
+    border-collapse: collapse;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 8px 8px 8px 20px;
+}
+
+.destable thead tr {
+    background-color: #980081;
+    color: #ffffff; 
+    text-align: middle;
+}
+
+.destable th .destable td {
+    padding: 12px 15px;
+}
+
+.destable tbody tr {
+    border-bottom: 1px solid #dddddd; 
+    } 
+    .destable tbody tr:nth-of-type(even) { 
+        background-color: #f3f3f3; 
+    }
+    .destable tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
 }
 
     @media (max-width: 720px) {
@@ -118,6 +143,13 @@
         
         .despcrition li{
             margin: 8px;
+        }
+        .destable{
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            min-width: 100%;
+            margin: 8px 10px 8px 10px;
         }
             
     }

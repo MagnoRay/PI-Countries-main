@@ -6,7 +6,8 @@ module.exports = (sequelize) => {
   sequelize.define('Activity', {
     name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      unique: true
     },
     difficulty: {
         type: DataTypes.ENUM('1', '2', '3', '4', '5'),

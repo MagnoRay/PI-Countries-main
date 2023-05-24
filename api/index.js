@@ -23,7 +23,7 @@ const { saveApiCountry } = require("./src/controllers/saveApiCountry.js");
 const { PORT } = process.env;
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then(async() => {
+conn.sync({ alter: true }).then(async() => {
   await saveApiCountry()
   server.listen(PORT, () => {
     console.log('%s listening at ', PORT); // eslint-disable-line no-console

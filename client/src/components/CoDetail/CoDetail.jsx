@@ -28,19 +28,36 @@ const CoDetail = () => {
                 </div>
                 <div className={styled.despcrition}>
                     <h4><label className={styled.labeldes}>Sub Continente:</label>{detail[0]?.subregion}</h4>
-                    <h4><label className={styled.labeldes}>Area: </label>{detail[0]?.area}</h4>
-                    <h4><label className={styled.labeldes}>Población:</label> {detail[0]?.population}</h4>
+                    <h4><label className={styled.labeldes}>Area: </label>{detail[0]?.area} Km2</h4>
+                    <h4><label className={styled.labeldes}>Población:</label> {detail[0]?.population} Hab.</h4>
                     <h2>Actividades</h2>
-                    {detail[0]?.Activities.map((a)=>
-                        <div key={a.name}>
-                            <li><label className={styled.labeldes}>Actividad: </label>{a.name}</li>
-                            <li><label className={styled.labeldes}>Dificultad: </label>{a.difficulty}</li>
-                            <li><label className={styled.labeldes}>Duración: </label>{a.duration}</li>
-                            <li><label className={styled.labeldes}>Temporada:</label>{a.season}</li>
-                        </div>
-                    )}
+                    <table className={styled.destable}>
+                        <thead>
+                            <tr>
+                                <th>Actividad</th>
+                                <th>Dificultad</th>
+                                <th>Duración</th>
+                                <th>Temporada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {detail[0]?.Activities.map((a)=>(
+                                <tr key={a.name}>
+                                    <td>{a.name}</td>
+                                    <td>{a.difficulty}</td>
+                                    <td>{a.duration}</td>
+                                    <td>{a.season}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
                     <div className={styled.buttonback}>
-                        <Link className={styled.linkback} to="/home"><button className={styled.buttonback}>Back</button></Link>
+                        {detail[0]?.Activities?.length > 0 ? 
+                         <Link className={styled.linkback} to="/newact"><button className={styled.buttonnew}>Crear otra actividad</button></Link>
+                         :
+                         <Link className={styled.linkback} to="/newact"><button className={styled.buttonnew}>Crear Actividad</button></Link>
+                         }
+                         <Link className={styled.linkback} to="/home"><button className={styled.buttonback}>Back</button></Link>
                     </div>
                 </div>
             </div>

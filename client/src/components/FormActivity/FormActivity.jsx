@@ -85,8 +85,6 @@ const FormActivity = () => {
         })
     }
 
-    
-
     return(
         <div className={styled.divform}>
             <Link className={styled.linkback} to="/home">

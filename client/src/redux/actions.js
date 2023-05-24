@@ -95,12 +95,19 @@ export const getFilterCountry = () => {
     }
 }
 
+
 export const insertActiviy = (payload) => {
     return async function(dispatch){
-        let response = await axios.post("/newact", payload);
-        return dispatch({type: INSERT_ACTIVITY, payload: response})
+        try {
+            let response = await axios.post("/newact", payload);
+            return dispatch({type: INSERT_ACTIVITY, payload: response});
+        } catch (error) {
+            alert('La actividad ya existe en el país seleccionado')
+            console.log(error)
+        }
     }
 }
+
 
 export const filterDuration = (dur) => {
     return {

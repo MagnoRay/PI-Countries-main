@@ -31,6 +31,7 @@ const CoDetail = () => {
                     <h4><label className={styled.labeldes}>Area: </label>{detail[0]?.area} Km2</h4>
                     <h4><label className={styled.labeldes}>Población:</label> {detail[0]?.population} Hab.</h4>
                     <h2>Actividades</h2>
+                    <div className={styled.divtable}>
                     <table className={styled.destable}>
                         <thead>
                             <tr>
@@ -51,6 +52,7 @@ const CoDetail = () => {
                             ))}
                         </tbody>
                     </table>
+                    </div>
                     <div className={styled.buttonback}>
                         {detail[0]?.Activities?.length > 0 ? 
                          <Link className={styled.linkback} to="/newact"><button className={styled.buttonnew}>Crear otra actividad</button></Link>

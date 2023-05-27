@@ -93,12 +93,15 @@
     transition: 0.5s;
     color: white;
 }
-
+.divtable{
+    height: auto;
+    width: 400px;
+    margin: 8px 8px 8px 20px;
+}
 .destable{
     border-collapse: collapse;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin: 8px 8px 8px 20px;
 }
 
 .destable thead tr {
@@ -144,12 +147,19 @@
         .despcrition li{
             margin: 8px;
         }
+        
+        .divtable{
+            height: auto;
+            width: 280px;
+            margin: 8px 8px 8px 8px;
+        }
+        
         .destable{
             display: block;
-            width: 100%;
             overflow-x: auto;
             min-width: 100%;
-            margin: 8px 10px 8px 10px;
+            margin: 0px 5px 8px 0px;
+            font-size: 15px;
         }
             
     }
